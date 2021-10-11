@@ -33,16 +33,16 @@ A simple library boilerplate.
 
 ```sh
 # yarn
-yarn add pkg
+yarn add lib-boilerplate
 
 # npm
-npm i pkg
+npm i lib-boilerplate
 ```
 
 ### API
 
 ```js
-import echo from 'pkg'
+import echo from 'lib-boilerplate'
 
 echo()
 ```

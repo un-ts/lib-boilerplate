@@ -1,5 +1,5 @@
 {
-  "name": "pkg",
+  "name": "lib-boilerplate",
   "version": "0.0.0",
   "type": "module",
   "description": "A simple library boilerplate.",
@@ -35,7 +35,7 @@
     "tslib": "^2.3.1"
   },
   "devDependencies": {
-    "@1stg/lib-config": "^4.1.0",
+    "@1stg/lib-config": "^4.1.1",
     "@changesets/changelog-github": "^0.4.1",
     "@changesets/cli": "^2.17.0",
     "@types/jest": "^27.0.2",
@@ -43,9 +43,6 @@
     "ts-jest": "^27.0.5",
     "type-coverage": "^2.18.2",
     "typescript": "^4.4.3"
-  },
-  "resolutions": {
-    "prettier": "^2.4.1"
   },
   "typeCoverage": {
     "atLeast": 100,
