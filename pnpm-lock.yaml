@@ -6,7 +6,7 @@ specifiers:
   '@changesets/cli': ^2.17.0
   '@types/jest': ^27.0.2
   '@types/node': ^16.10.3
-  ts-jest: ^27.0.5
+  ts-jest: ^27.0.7
   tslib: ^2.3.1
   type-coverage: ^2.18.2
   typescript: ^4.4.3
@@ -20,7 +20,7 @@ devDependencies:
   '@changesets/cli': 2.17.0
   '@types/jest': 27.0.2
   '@types/node': 16.10.3
-  ts-jest: 27.0.5_c47c91584e91cb7ce37cc5ad0f197235
+  ts-jest: 27.0.7_c47c91584e91cb7ce37cc5ad0f197235
   type-coverage: 2.18.2_typescript@4.4.3
   typescript: 4.4.3
 
@@ -10085,8 +10085,8 @@ packages:
     resolution: {integrity: sha512-rvuRbTarPXmMb79SmzEp8aqXNKcK+y0XaB298IXueQ8I2PsrATcPBCSPyK/dDNa2iWOhKlfNnOjdAOTBU/nkFA==}
     dev: true
 
-  /ts-jest/27.0.5_c47c91584e91cb7ce37cc5ad0f197235:
-    resolution: {integrity: sha512-lIJApzfTaSSbtlksfFNHkWOzLJuuSm4faFAfo5kvzOiRAuoN4/eKxVJ2zEAho8aecE04qX6K1pAzfH5QHL1/8w==}
+  /ts-jest/27.0.7_c47c91584e91cb7ce37cc5ad0f197235:
+    resolution: {integrity: sha512-O41shibMqzdafpuP+CkrOL7ykbmLh+FqQrXEmV9CydQ5JBk0Sj0uAEF5TNNe94fZWKm3yYvWa/IbyV4Yg1zK2Q==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
     peerDependencies:
@@ -10108,7 +10108,7 @@ packages:
       fast-json-stable-stringify: 2.1.0
       jest-util: 27.2.5
       json5: 2.2.0
-      lodash: 4.17.21
+      lodash.memoize: 4.1.2
       make-error: 1.3.6
       semver: 7.3.5
       typescript: 4.4.3
