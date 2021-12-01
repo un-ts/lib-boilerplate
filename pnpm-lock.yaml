@@ -8,7 +8,7 @@ specifiers:
   '@types/node': ^16.10.3
   ts-jest: ^27.0.7
   tslib: ^2.3.1
-  type-coverage: ^2.18.3
+  type-coverage: ^2.19.0
   typescript: ^4.4.4
 
 dependencies:
@@ -21,7 +21,7 @@ devDependencies:
   '@types/jest': 27.0.3
   '@types/node': 16.10.3
   ts-jest: 27.0.7_e88e112a06d7299087e8780cb26ee868
-  type-coverage: 2.18.3_typescript@4.4.4
+  type-coverage: 2.19.0_typescript@4.4.4
   typescript: 4.4.4
 
 packages:
@@ -10198,8 +10198,8 @@ packages:
       typescript: 4.4.4
     dev: true
 
-  /type-coverage/2.18.3_typescript@4.4.4:
-    resolution: {integrity: sha512-wO3CNAPJdnWkJwmp486tZRcH74MUyN9gHwwOPfPlFQuZXiqjE6JUYMGVFbFh6gYGlZWrODEhmKpGwdyplnQOow==}
+  /type-coverage/2.19.0_typescript@4.4.4:
+    resolution: {integrity: sha512-y+ZVbaleqK+ATH80PzbBNQpXSgbJSAiTnl/2Z60lMoz1XRIPjhnxf8qQ4jE64kuTt7huEymB4ikN8+7Zosqvig==}
     hasBin: true
     dependencies:
       minimist: 1.2.5
