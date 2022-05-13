@@ -6,17 +6,21 @@ on:
 
 jobs:
   ci:
-    name: Lint and Test with Node.js ${{ matrix.node }}
+    name: Lint and Test with Node.js ${{ matrix.node }} on ${{ matrix.os }}
     strategy:
       matrix:
         node:
-          - 12
           - 14
           - 16
-    runs-on: ubuntu-latest
+          - 18
+        os:
+          - macos-latest
+          # - windows-latest # disable for now due to `eslint-mdx`, and `patch-package` does not work for pnpm
+          - ubuntu-latest
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@master
+        uses: actions/checkout@v3
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
@@ -24,13 +28,13 @@ jobs:
           version: latest
 
       - name: Setup Node.js ${{ matrix.node }}
-        uses: actions/setup-node@master
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
           cache: pnpm
 
       - name: Install Dependencies
-        run: pnpm i --frozen-lockfile --prefer-offline
+        run: pnpm i --frozen-lockfile
 
       - name: Build, Lint and test
         run: |
@@ -41,6 +45,7 @@ jobs:
           PARSER_NO_WATCH: true
 
       - name: Codecov
+        if: matrix.os != 'windows-latest'
         run: |
           pnpm add --global codecov codacy-coverage
           codecov
