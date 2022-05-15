@@ -15,7 +15,7 @@ jobs:
           - 18
         os:
           - macos-latest
-          # - windows-latest # disable for now due to `eslint-mdx`, and `patch-package` does not work for pnpm
+          - windows-latest
           - ubuntu-latest
     runs-on: ${{ matrix.os }}
     steps:
@@ -45,11 +45,12 @@ jobs:
           PARSER_NO_WATCH: true
 
       - name: Codecov
+        uses: codecov/codecov-action@v3
+
+      - name: Codacy Coverage
         if: matrix.os != 'windows-latest'
         run: |
-          pnpm add --global codecov codacy-coverage
-          codecov
-          cat ./coverage/lcov.info | codacy-coverage -u rx-ts -n lib-boilerplate
+          bash <(curl -Ls https://coverage.codacy.com/get.sh)
         env:
           CI: 'true'
           CODACY_ACCOUNT_TOKEN: ${{ secrets.CODACY_ACCOUNT_TOKEN }}
