@@ -52,6 +52,5 @@ jobs:
         run: |
           bash <(curl -Ls https://coverage.codacy.com/get.sh)
         env:
-          CI: 'true'
           CODACY_ACCOUNT_TOKEN: ${{ secrets.CODACY_ACCOUNT_TOKEN }}
           CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
