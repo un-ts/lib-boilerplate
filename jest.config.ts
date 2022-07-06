@@ -7,7 +7,6 @@ const config: Config.InitialOptions = {
   extensionsToTreatAsEsm: ['.ts'],
   moduleNameMapper: {
     '^(\\.{1,2}/.*)\\.js$': '$1',
-    '^lib-boilerplate$': '<rootDir>/src',
   },
   globals: {
     'ts-jest': {
