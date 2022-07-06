@@ -1,9 +1,9 @@
 {
-  "extends": "@1stg/tsconfig/lib",
+  "extends": "@1stg/tsconfig/node16",
   "compilerOptions": {
-    "baseUrl": ".",
+    "rootDir": ".",
     "paths": {
-      "lib-boilerplate": ["src"]
+      "lib-boilerplate": ["./src"]
     }
   }
 }

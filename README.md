@@ -1,15 +1,11 @@
 # lib-boilerplate
 
-[![GitHub Actions](https://github.com/rx-ts/lib-boilerplate/workflows/CI/badge.svg)](https://github.com/rx-ts/lib-boilerplate/actions/workflows/ci.yml)
-[![Codecov](https://img.shields.io/codecov/c/github/rx-ts/lib-boilerplate.svg)](https://codecov.io/gh/rx-ts/lib-boilerplate)
-[![Codacy Grade](https://img.shields.io/codacy/grade/f2cec506ecf446aca3769c402e0a104e)](https://www.codacy.com/gh/rx-ts/lib-boilerplate)
+[![GitHub Actions](https://github.com/un-ts/lib-boilerplate/workflows/CI/badge.svg)](https://github.com/un-ts/lib-boilerplate/actions/workflows/ci.yml)
+[![Codecov](https://img.shields.io/codecov/c/github/un-ts/lib-boilerplate.svg)](https://codecov.io/gh/un-ts/lib-boilerplate)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/un-ts/lib-boilerplate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/un-ts/lib-boilerplate/context:javascript)
 [![type-coverage](https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2Frx-ts%2Flib-boilerplate%2Fmain%2Fpackage.json)](https://github.com/plantain-00/type-coverage)
 [![npm](https://img.shields.io/npm/v/lib-boilerplate.svg)](https://www.npmjs.com/package/lib-boilerplate)
-[![GitHub Release](https://img.shields.io/github/release/rx-ts/lib-boilerplate)](https://github.com/rx-ts/lib-boilerplate/releases)
-
-[![David Peer](https://img.shields.io/david/peer/rx-ts/lib-boilerplate.svg)](https://david-dm.org/rx-ts/lib-boilerplate?type=peer)
-[![David](https://img.shields.io/david/rx-ts/lib-boilerplate.svg)](https://david-dm.org/rx-ts/lib-boilerplate)
-[![David Dev](https://img.shields.io/david/dev/rx-ts/lib-boilerplate.svg)](https://david-dm.org/rx-ts/lib-boilerplate?type=dev)
+[![GitHub Release](https://img.shields.io/github/release/un-ts/lib-boilerplate)](https://github.com/un-ts/lib-boilerplate/releases)
 
 [![Conventional Commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
@@ -24,6 +20,8 @@ A simple library boilerplate.
 - [Usage](#usage)
   - [Install](#install)
   - [API](#api)
+- [Sponsors](#sponsors)
+- [Backers](#backers)
 - [Changelog](#changelog)
 - [License](#license)
 
@@ -46,6 +44,18 @@ import echo from 'lib-boilerplate'
 
 echo()
 ```
+
+## Sponsors
+
+| 1stG                                                                                                                               | RxTS                                                                                                                               | UnTS                                                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| [![1stG Open Collective backers and sponsors](https://opencollective.com/1stG/organizations.svg)](https://opencollective.com/1stG) | [![RxTS Open Collective backers and sponsors](https://opencollective.com/rxts/organizations.svg)](https://opencollective.com/rxts) | [![UnTS Open Collective backers and sponsors](https://opencollective.com/unts/organizations.svg)](https://opencollective.com/unts) |
+
+## Backers
+
+| 1stG                                                                                                                             | RxTS                                                                                                                             | UnTS                                                                                                                             |
+| -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| [![1stG Open Collective backers and sponsors](https://opencollective.com/1stG/individuals.svg)](https://opencollective.com/1stG) | [![RxTS Open Collective backers and sponsors](https://opencollective.com/rxts/individuals.svg)](https://opencollective.com/rxts) | [![UnTS Open Collective backers and sponsors](https://opencollective.com/unts/individuals.svg)](https://opencollective.com/unts) |
 
 ## Changelog
 
