@@ -1,7 +1,7 @@
 {
   "extends": "..",
   "compilerOptions": {
-    "rootDir": ".",
-    "outDir": "../lib"
+    "baseUrl": ".",
+    "jsx": "react-jsx"
   }
 }
