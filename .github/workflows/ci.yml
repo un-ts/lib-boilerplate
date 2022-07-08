@@ -34,7 +34,7 @@ jobs:
           cache: pnpm
 
       - name: Install Dependencies
-        run: pnpm i --frozen-lockfile
+        run: pnpm i
 
       - name: Build, Lint and test
         run: |
