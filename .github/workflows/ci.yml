@@ -36,10 +36,8 @@ jobs:
       - name: Install Dependencies
         run: pnpm i
 
-      - name: Build, Lint and test
-        run: |
-          pnpm test
-          pnpm lint
+      - name: Build, Lint and Test
+        run: pnpm run-s build lint test
         env:
           EFF_NO_LINK_RULES: true
           PARSER_NO_WATCH: true
