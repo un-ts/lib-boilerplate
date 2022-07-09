@@ -30,6 +30,9 @@ A simple library boilerplate.
 ### Install
 
 ```sh
+# pnpm
+pnpm add lib-boilerplate
+
 # yarn
 yarn add lib-boilerplate
 

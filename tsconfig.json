@@ -1,7 +1,6 @@
 {
   "extends": "@1stg/tsconfig/node16",
   "compilerOptions": {
-    "rootDir": ".",
-    "lib": ["DOM", "ESNext"]
+    "rootDir": "."
   }
 }
