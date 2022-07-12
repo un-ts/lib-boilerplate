@@ -57,20 +57,22 @@
     "lint:es": "eslint . --cache -f friendly --max-warnings 10",
     "lint:style": "stylelint . --cache",
     "lint:tsc": "tsc --noEmit",
+    "postversion": "pnpm i --no-frozen-lockfile",
     "prepare": "simple-git-hooks",
     "prerelease": "pnpm build",
     "release": "changeset publish",
     "serve": "sirv dist -s",
     "test": "jest",
     "typecov": "type-coverage",
-    "vercel-build": "w -e docs -p --publicPath /"
+    "vercel-build": "w -e docs -p --publicPath /",
+    "version": "changeset version"
   },
   "dependencies": {
     "tslib": "^2.4.0"
   },
   "devDependencies": {
-    "@1stg/app-config": "^6.0.0",
-    "@1stg/lib-config": "^8.0.0",
+    "@1stg/app-config": "^6.1.2",
+    "@1stg/lib-config": "^8.1.1",
     "@changesets/changelog-github": "^0.4.5",
     "@changesets/cli": "^2.23.1",
     "@pkgr/webpack": "^3.1.2",
@@ -87,7 +89,7 @@
     "react-router-dom": "^6.3.0",
     "sirv-cli": "^2.0.2",
     "ts-jest": "^28.0.5",
-    "type-coverage": "^2.21.2",
+    "type-coverage": "^2.22.0",
     "typescript": "^4.7.4"
   },
   "publishConfig": {
