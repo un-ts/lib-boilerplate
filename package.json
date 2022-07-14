@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "type": "module",
   "description": "A simple library boilerplate.",
-  "repository": "git+https://github.com/rx-ts/lib-boilerplate.git",
+  "repository": "git+https://github.com/un-ts/lib-boilerplate.git",
   "author": "JounQin (https://www.1stG.me) <admin@1stg.me>",
   "donate": {
     "recipients": [
@@ -38,7 +38,7 @@
   },
   "funding": "https://opencollective.com/unts",
   "license": "MIT",
-  "packageManager": "pnpm@7.5.0",
+  "packageManager": "pnpm@7.5.1",
   "engines": {
     "node": "^12.20.0 || ^14.18.0 || >=16.0.0"
   },
@@ -51,7 +51,7 @@
     "build": "run-p build:*",
     "build:r": "r -f cjs",
     "build:ts": "tsc -p src",
-    "codesanbox:install": "npx pnpm@7.5.0 i",
+    "codesanbox:install": "npx pnpm@7.5.1 i",
     "dev": "w -e docs",
     "lint": "run-p lint:*",
     "lint:es": "eslint . --cache -f friendly --max-warnings 10",
@@ -74,12 +74,12 @@
     "@1stg/app-config": "^6.1.2",
     "@1stg/lib-config": "^8.1.1",
     "@changesets/changelog-github": "^0.4.5",
-    "@changesets/cli": "^2.23.1",
+    "@changesets/cli": "^2.23.2",
     "@pkgr/webpack": "^3.1.2",
     "@pkgr/webpack-mdx": "^2.0.3",
-    "@types/jest": "^28.1.4",
+    "@types/jest": "^28.1.5",
     "@types/mdx": "^2.0.2",
-    "@types/node": "^18.0.3",
+    "@types/node": "^18.0.4",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@types/web": "^0.0.69",
