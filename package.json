@@ -51,7 +51,7 @@
     "build": "run-p build:*",
     "build:r": "r -f cjs",
     "build:tsc": "tsc -p src",
-    "codesandbox:install": "npx pnpm@7.6.0 i",
+    "codesandbox:install": "yarn",
     "dev": "w -e docs",
     "lint": "run-p lint:*",
     "lint:es": "eslint . --cache -f friendly --max-warnings 10",
@@ -78,8 +78,9 @@
     "@changesets/cli": "^2.24.1",
     "@pkgr/webpack": "^3.2.0",
     "@pkgr/webpack-mdx": "^2.0.3",
+    "@size-limit/preset-small-lib": "^7.0.8",
     "@types/mdx": "^2.0.2",
-    "@types/node": "^18.6.1",
+    "@types/node": "^18.6.2",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@types/web": "^0.0.70",
@@ -90,9 +91,10 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
     "sirv-cli": "^2.0.2",
+    "size-limit": "^7.0.8",
     "type-coverage": "^2.22.0",
     "typescript": "4.7.4",
-    "unplugin-auto-import": "^0.10.1",
+    "unplugin-auto-import": "^0.10.2",
     "vitest": "^0.19.1"
   },
   "publishConfig": {
@@ -105,11 +107,11 @@
     },
     "types": "./lib/index.d.ts"
   },
-  "pnpm": {
-    "patchedDependencies": {
-      "unplugin-auto-import@0.10.1": "patches/unplugin-auto-import@0.10.1.patch"
+  "size-limit": [
+    {
+      "path": "lib/index.js"
     }
-  },
+  ],
   "typeCoverage": {
     "atLeast": 100,
     "cache": true,
