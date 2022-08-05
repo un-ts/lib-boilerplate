@@ -3,10 +3,7 @@ import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   plugins: [
-    // TODO: report the TypeScript issue
-    (
-      autoImport as unknown as typeof import('unplugin-auto-import/vite')['default']
-    )({
+    autoImport({
       imports: 'vitest',
     }),
   ],
