@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 
-import './global.scss'
+import './global.css'
 import 'github-markdown-css'
 
 const Readme = () => {

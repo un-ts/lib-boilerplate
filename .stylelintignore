@@ -5,5 +5,7 @@ LICENSE
 *.json
 *.log
 *.patch
+*.ts
+*.tsx
 *.yaml
 *.yml
