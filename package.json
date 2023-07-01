@@ -44,7 +44,7 @@
     "@1stg/app-config": "^8.1.0",
     "@1stg/lib-config": "^11.1.0",
     "@changesets/changelog-github": "^0.4.8",
-    "@changesets/cli": "^2.26.1",
+    "@changesets/cli": "^2.26.2",
     "@mdx-js/rollup": "^2.3.0",
     "@size-limit/preset-small-lib": "^8.2.4",
     "@types/mdx": "^2.0.5",
