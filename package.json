@@ -61,7 +61,7 @@
     "react-router-dom": "^6.11.2",
     "rehype-slug": "^5.1.0",
     "remark-gfm": "^3.0.1",
-    "size-limit": "^8.2.4",
+    "size-limit": "^8.2.6",
     "type-coverage": "^2.25.0",
     "typescript": "~5.0.4",
     "unplugin-auto-import": "^0.15.3",
