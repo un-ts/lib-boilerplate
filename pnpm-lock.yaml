@@ -28,7 +28,7 @@ devDependencies:
     version: 2.3.0(rollup@3.21.3)
   '@size-limit/preset-small-lib':
     specifier: ^8.2.6
-    version: 8.2.6(size-limit@8.2.4)
+    version: 8.2.6(size-limit@8.2.6)
   '@types/mdx':
     specifier: ^2.0.5
     version: 2.0.5
@@ -72,8 +72,8 @@ devDependencies:
     specifier: ^3.0.1
     version: 3.0.1
   size-limit:
-    specifier: ^8.2.4
-    version: 8.2.4
+    specifier: ^8.2.6
+    version: 8.2.6
   type-coverage:
     specifier: ^2.25.0
     version: 2.25.0(typescript@5.0.4)
@@ -4093,7 +4093,7 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /@size-limit/esbuild@8.2.6(size-limit@8.2.4):
+  /@size-limit/esbuild@8.2.6(size-limit@8.2.6):
     resolution: {integrity: sha512-a4c8xVDuDMYw5jF655ADjQDluw3jGPPYer6UJock5rSnUlWnIbmT/Ohud7gJGq5gqyLUQOCrBD7NB3g+mlhj4g==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     peerDependencies:
@@ -4101,27 +4101,27 @@ packages:
     dependencies:
       esbuild: 0.18.11
       nanoid: 3.3.6
-      size-limit: 8.2.4
+      size-limit: 8.2.6
     dev: true
 
-  /@size-limit/file@8.2.6(size-limit@8.2.4):
+  /@size-limit/file@8.2.6(size-limit@8.2.6):
     resolution: {integrity: sha512-B7ayjxiJsbtXdIIWazJkB5gezi5WBMecdHTFPMDhI3NwEML1RVvUjAkrb1mPAAkIpt2LVHPnhdCUHjqDdjugwg==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     peerDependencies:
       size-limit: 8.2.6
     dependencies:
       semver: 7.5.3
-      size-limit: 8.2.4
+      size-limit: 8.2.6
     dev: true
 
-  /@size-limit/preset-small-lib@8.2.6(size-limit@8.2.4):
+  /@size-limit/preset-small-lib@8.2.6(size-limit@8.2.6):
     resolution: {integrity: sha512-roanEuscDaaXDsT5Cg9agMbmsQVlMr66eRg3AwT2o4vE7WFLR8Z42p0AHZiwucW1nGpCxAh8E08Qa/yyVuj5nA==}
     peerDependencies:
       size-limit: 8.2.6
     dependencies:
-      '@size-limit/esbuild': 8.2.6(size-limit@8.2.4)
-      '@size-limit/file': 8.2.6(size-limit@8.2.4)
-      size-limit: 8.2.4
+      '@size-limit/esbuild': 8.2.6(size-limit@8.2.6)
+      '@size-limit/file': 8.2.6(size-limit@8.2.6)
+      size-limit: 8.2.6
     dev: true
 
   /@swc/core-darwin-arm64@1.3.56:
@@ -8512,7 +8512,7 @@ packages:
       array-union: 2.1.0
       dir-glob: 3.0.1
       fast-glob: 3.2.12
-      ignore: 5.2.0
+      ignore: 5.2.4
       merge2: 1.4.1
       slash: 3.0.0
     dev: true
@@ -8835,11 +8835,6 @@ packages:
 
   /ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
-    dev: true
-
-  /ignore@5.2.0:
-    resolution: {integrity: sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==}
-    engines: {node: '>= 4'}
     dev: true
 
   /ignore@5.2.4:
@@ -9745,11 +9740,6 @@ packages:
     resolution: {integrity: sha512-aS9Y1Pg0vDstPTh3hOohL0qStqleFXbmIyCETUMXCRpKg2C1y7aFUHD3tfnpsjmHGfGRotQMGc1H7NSmNjSYhw==}
     dependencies:
       pako: 2.1.0
-    dev: true
-
-  /lilconfig@2.0.6:
-    resolution: {integrity: sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg==}
-    engines: {node: '>=10'}
     dev: true
 
   /lilconfig@2.1.0:
@@ -14311,15 +14301,15 @@ packages:
     requiresBuild: true
     dev: true
 
-  /size-limit@8.2.4:
-    resolution: {integrity: sha512-Un16nSreD1v2CYwSorattiJcHuAWqXvg4TsGgzpjnoByqQwsSfCIEQHuaD14HNStzredR8cdsO9oGH91ibypTA==}
+  /size-limit@8.2.6:
+    resolution: {integrity: sha512-zpznim/tX/NegjoQuRKgWTF4XiB0cn2qt90uJzxYNTFAqexk4b94DOAkBD3TwhC6c3kw2r0KcnA5upziVMZqDg==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     hasBin: true
     dependencies:
       bytes-iec: 3.1.1
       chokidar: 3.5.3
       globby: 11.1.0
-      lilconfig: 2.0.6
+      lilconfig: 2.1.0
       nanospinner: 1.1.0
       picocolors: 1.0.0
     dev: true
