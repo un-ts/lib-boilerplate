@@ -42,8 +42,8 @@ devDependencies:
     specifier: ^18.2.7
     version: 18.2.7
   '@types/web':
-    specifier: ^0.0.111
-    version: 0.0.111
+    specifier: ^0.0.115
+    version: 0.0.115
   '@vitejs/plugin-react-swc':
     specifier: ^3.3.0
     version: 3.3.0(patch_hash=jtrb4xsacimtezovxiizwhphny)(vite@4.3.4)
@@ -4478,8 +4478,8 @@ packages:
     resolution: {integrity: sha512-rFT3ak0/2trgvp4yYZo5iKFEPsET7vKydKF+VRCxlQ9bpheehyAJH89dAkaLEq/j/RZXJIqcgsmPJKUP1Z28HA==}
     dev: true
 
-  /@types/web@0.0.111:
-    resolution: {integrity: sha512-OnLWZBNMXlvTsAalsPcVyVkxW76yG2QQsRPbRijMQxCG791IH9sAIAsg1tcDDK8p5JwHW0GV3/uYOg+RRqGrOw==}
+  /@types/web@0.0.115:
+    resolution: {integrity: sha512-IBtUgtxnITC7WTCg4tv6kCnSP0T+fM+3PzQPIzLzJY1DDlhBFKM/9+uMURw14YweWPDiFNIZ94Gc1bJtwow97g==}
     dev: true
 
   /@types/whatwg-mimetype@3.0.0:
