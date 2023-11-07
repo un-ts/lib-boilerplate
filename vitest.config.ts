@@ -7,9 +7,13 @@ export default defineConfig({
       imports: 'vitest',
     }),
   ],
+  resolve: {
+    alias: {
+      'lib-boilerplate': './src/index.ts',
+    },
+  },
   test: {
     coverage: {
-      provider: 'istanbul',
       reporter: ['lcov', 'json', 'text'],
     },
   },

@@ -1,6 +1,8 @@
 .*cache
 .type-coverage
 .vercel
+.yarn/*
+!.yarn/plugins
 coverage
 dist
 lib
