@@ -1,5 +1,6 @@
 {
-  "extends": "..",
+  // https://github.com/vitejs/vite/issues/15371 -- should prefer `..`
+  "extends": "../tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
     "jsx": "react-jsx"

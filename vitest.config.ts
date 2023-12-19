@@ -9,11 +9,12 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      'lib-boilerplate': './src/index.ts',
+      'lib-boilerplate': new URL('src/index.ts', import.meta.url).pathname,
     },
   },
   test: {
     coverage: {
+      include: ['src'],
       reporter: ['lcov', 'json', 'text'],
     },
   },
