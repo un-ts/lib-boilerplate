@@ -38,7 +38,8 @@
     "serve": "vite preview docs",
     "test": "vitest run --coverage",
     "typecov": "type-coverage",
-    "vercel-build": "vite build docs --emptyOutDir"
+    "vercel-build": "vite build docs --emptyOutDir",
+    "version": "changeset version && yarn --no-immutable"
   },
   "dependencies": {
     "tslib": "^2.6.2"

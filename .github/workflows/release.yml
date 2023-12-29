@@ -35,7 +35,7 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: yarn release
-          version: yarn changeset version
+          version: yarn run version
           commit: 'chore: release lib-boilerplate'
           title: 'chore: release lib-boilerplate'
         env:
