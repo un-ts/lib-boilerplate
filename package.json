@@ -28,8 +28,7 @@
     "build:r": "r -f cjs",
     "build:tsc": "tsc -p src",
     "dev": "vitest",
-    "docs:build": "vite build docs --emptyOutDir",
-    "docs:dev": "vite docs",
+    "docs": "vite docs",
     "lint": "run-p 'lint:*'",
     "lint:es": "eslint . --cache -f friendly --max-warnings 10",
     "lint:style": "stylelint . --cache",
@@ -39,7 +38,7 @@
     "serve": "vite preview docs",
     "test": "vitest run --coverage",
     "typecov": "type-coverage",
-    "vercel-build": "yarn docs:build"
+    "vercel-build": "vite build docs --emptyOutDir"
   },
   "dependencies": {
     "tslib": "^2.6.2"
