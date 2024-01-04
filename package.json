@@ -53,12 +53,12 @@
     "@pkgr/rollup": "^5.0.0",
     "@size-limit/preset-small-lib": "^11.0.1",
     "@types/mdx": "^2.0.10",
-    "@types/node": "^20.10.5",
+    "@types/node": "^20.10.6",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
-    "@types/web": "^0.0.131",
+    "@types/web": "^0.0.134",
     "@vitejs/plugin-react-swc": "^3.5.0",
-    "@vitest/coverage-v8": "^1.1.0",
+    "@vitest/coverage-v8": "^1.1.1",
     "eslint": "^8.56.0",
     "github-markdown-css": "^5.5.0",
     "lint-staged": "^15.2.0",
@@ -75,7 +75,7 @@
     "typescript": "^5.3.3",
     "unplugin-auto-import": "^0.17.3",
     "vite": "^5.0.10",
-    "vitest": "^1.1.0"
+    "vitest": "^1.1.1"
   },
   "size-limit": [
     {

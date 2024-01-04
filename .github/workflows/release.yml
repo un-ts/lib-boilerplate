@@ -34,10 +34,10 @@ jobs:
       - name: Create Release Pull Request or Publish to npm
         uses: changesets/action@v1
         with:
-          publish: yarn release
-          version: yarn run version
           commit: 'chore: release lib-boilerplate'
           title: 'chore: release lib-boilerplate'
+          version: yarn run version
+          publish: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
