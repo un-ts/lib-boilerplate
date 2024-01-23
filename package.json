@@ -9,7 +9,7 @@
   "license": "MIT",
   "packageManager": "yarn@4.0.2",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18.19.0"
   },
   "main": "./lib/index.cjs",
   "module": "./lib/index.js",
