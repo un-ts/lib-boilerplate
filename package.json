@@ -72,7 +72,7 @@
     "simple-git-hooks": "^2.9.0",
     "size-limit": "^11.0.2",
     "stylelint": "^16.2.0",
-    "type-coverage": "^2.27.1",
+    "type-coverage": "^2.29.7",
     "typescript": "^5.3.3",
     "unplugin-auto-import": "^0.17.3",
     "vite": "^5.0.12",
