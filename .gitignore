@@ -2,6 +2,7 @@
 .type-coverage
 .vercel
 .yarn/*
+!.yarn/releases
 !.yarn/plugins
 coverage
 dist
