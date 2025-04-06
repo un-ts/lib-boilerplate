@@ -11,23 +11,7 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "main": "./lib/index.cjs",
-  "types": "./index.d.cts",
-  "module": "./lib/index.js",
-  "exports": {
-    "import": {
-      "types": "./lib/index.d.ts",
-      "default": "./lib/index.js"
-    },
-    "module-sync": {
-      "types": "./lib/index.d.ts",
-      "default": "./lib/index.js"
-    },
-    "require": {
-      "types": "./index.d.cts",
-      "default": "./lib/index.cjs"
-    }
-  },
+  "exports": "./src/index.ts",
   "files": [
     "index.d.cts",
     "lib",
@@ -100,6 +84,25 @@
   "resolutions": {
     "es5-ext": "npm:@unes/es5-ext@latest",
     "prettier": "^3.5.3"
+  },
+  "publishConfig": {
+    "main": "./lib/index.cjs",
+    "types": "./index.d.cts",
+    "module": "./lib/index.js",
+    "exports": {
+      "import": {
+        "types": "./lib/index.d.ts",
+        "default": "./lib/index.js"
+      },
+      "module-sync": {
+        "types": "./lib/index.d.ts",
+        "default": "./lib/index.js"
+      },
+      "require": {
+        "types": "./index.d.cts",
+        "default": "./lib/index.cjs"
+      }
+    }
   },
   "typeCoverage": {
     "atLeast": 100,
