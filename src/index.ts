@@ -1,1 +1,3 @@
-export default () => 'Hello World!'
+export default function echo() {
+  return 'Hello World!'
+}

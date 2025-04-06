@@ -5,6 +5,15 @@ on:
     branches:
       - main
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  id-token: write
+  pull-requests: write
+
 jobs:
   release:
     name: Release
@@ -21,12 +30,6 @@ jobs:
         with:
           node-version: lts/*
           cache: yarn
-        env:
-          # https://github.com/actions/setup-node/issues/531#issuecomment-1819151412
-          SKIP_YARN_COREPACK_CHECK: 1
-
-      - name: Enable Corepack
-        run: corepack enable
 
       - name: Install Dependencies
         run: yarn --immutable
@@ -40,4 +43,5 @@ jobs:
           publish: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_CONFIG_PROVENANCE: true
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

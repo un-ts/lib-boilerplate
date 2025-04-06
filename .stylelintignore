@@ -2,9 +2,15 @@ coverage
 dist
 lib
 LICENSE
+*.cjs
+*.cts
+*.js
 *.json
+*.jsx
 *.lock
 *.log
+*.mjs
+*.mts
 *.patch
 *.ts
 *.tsx
