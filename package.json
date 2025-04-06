@@ -1,6 +1,6 @@
 {
   "name": "lib-boilerplate",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "type": "module",
   "description": "A simple library boilerplate.",
   "repository": "git+https://github.com/un-ts/lib-boilerplate.git",
