@@ -7,9 +7,9 @@
   "author": "JounQin <admin@1stg.me> (https://www.1stG.me)",
   "funding": "https://opencollective.com/unts",
   "license": "MIT",
-  "packageManager": "yarn@4.8.1",
+  "packageManager": "yarn@4.9.1",
   "engines": {
-    "node": ">=18.0.0"
+    "node": "^14.18.0 || >=16.0.0"
   },
   "exports": "./src/index.ts",
   "files": [
@@ -37,52 +37,48 @@
     "typecov": "type-coverage",
     "version": "changeset version && yarn --no-immutable"
   },
-  "dependencies": {
-    "tslib": "^2.8.1"
-  },
   "devDependencies": {
-    "@1stg/browserslist-config": "^2.1.2",
-    "@1stg/common-config": "^12.0.0",
-    "@1stg/postcss-config": "^6.0.4",
-    "@1stg/stylelint-config": "^6.0.3",
+    "@1stg/browserslist-config": "^2.1.4",
+    "@1stg/common-config": "^13.0.1",
+    "@1stg/postcss-config": "^6.0.6",
+    "@1stg/stylelint-config": "^6.0.5",
     "@changesets/changelog-github": "^0.5.1",
-    "@changesets/cli": "^2.28.1",
+    "@changesets/cli": "^2.29.2",
     "@commitlint/cli": "^19.8.0",
     "@mdx-js/rollup": "^3.1.0",
-    "@pkgr/rollup": "^6.0.1",
-    "@shikijs/rehype": "^3.2.1",
+    "@pkgr/rollup": "^6.0.3",
+    "@shikijs/rehype": "^3.2.2",
     "@size-limit/preset-small-lib": "^11.2.0",
     "@types/mdx": "^2.0.13",
-    "@types/node": "^22.14.0",
-    "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.1",
-    "@types/web": "^0.0.216",
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@types/web": "^0.0.220",
     "@vercel/analytics": "^1.5.0",
-    "@vitejs/plugin-react-swc": "^3.8.1",
+    "@vitejs/plugin-react-swc": "^3.9.0",
     "@vitest/coverage-v8": "^3.1.1",
     "clean-pkg-json": "^1.2.1",
     "eslint": "^9.24.0",
     "github-markdown-css": "^5.8.1",
-    "lint-staged": "^15.5.0",
+    "nano-staged": "^0.8.0",
     "npm-run-all2": "^7.0.2",
     "prettier": "^3.5.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.5.0",
+    "react-router-dom": "^7.5.1",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.1",
     "rimraf": "^6.0.1",
     "simple-git-hooks": "^2.12.1",
     "size-limit": "^11.2.0",
-    "stylelint": "^16.17.0",
+    "stylelint": "^16.18.0",
     "type-coverage": "^2.29.7",
     "typescript": "^5.8.3",
-    "vite": "^6.2.5",
+    "vite": "^6.3.2",
     "vitest": "^3.1.1",
-    "yarn-berry-deduplicate": "^6.1.1"
+    "yarn-berry-deduplicate": "^6.1.3"
   },
   "resolutions": {
-    "es5-ext": "npm:@unes/es5-ext@latest",
     "prettier": "^3.5.3"
   },
   "publishConfig": {
@@ -90,18 +86,17 @@
     "types": "./index.d.cts",
     "module": "./lib/index.js",
     "exports": {
-      "import": {
-        "types": "./lib/index.d.ts",
-        "default": "./lib/index.js"
+      ".": {
+        "import": {
+          "types": "./lib/index.d.ts",
+          "default": "./lib/index.js"
+        },
+        "require": {
+          "types": "./index.d.cts",
+          "default": "./lib/index.cjs"
+        }
       },
-      "module-sync": {
-        "types": "./lib/index.d.ts",
-        "default": "./lib/index.js"
-      },
-      "require": {
-        "types": "./index.d.cts",
-        "default": "./lib/index.cjs"
-      }
+      "./package.json": "./package.json"
     }
   },
   "typeCoverage": {
