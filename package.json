@@ -1,6 +1,6 @@
 {
   "name": "lib-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "type": "module",
   "description": "A simple library boilerplate.",
   "repository": "git+https://github.com/un-ts/lib-boilerplate.git",
@@ -33,8 +33,8 @@
   ],
   "scripts": {
     "build": "run-p 'build:*'",
-    "build:tsc": "tsc -b",
-    "build:tsdown": "tsdown --clean false -d lib --format cjs --tsconfig src/tsconfig.json src/index.ts",
+    "build:tsc": "tsc -p src",
+    "build:tsdown": "tsdown --clean false -d lib --format cjs src/index.ts",
     "clean": "premove .type-coverage coverage dist lib .eslintcache .stylelintcache",
     "dev": "vitest",
     "docs": "vite",
@@ -43,7 +43,7 @@
     "lint": "run-p 'lint:*'",
     "lint:es": "eslint . --cache --max-warnings 10",
     "lint:style": "stylelint . --cache",
-    "lint:tsc": "tsc -b --noEmit",
+    "lint:tsc": "tsc -p tsconfig.eslint.json --noEmit",
     "prepare": "simple-git-hooks && yarn-berry-deduplicate || exit 0",
     "release": "yarn build && clean-pkg-json && changeset publish",
     "serve": "vite preview",

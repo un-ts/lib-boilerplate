@@ -1,15 +1,8 @@
 {
-  "extends": "./tsconfig.lib",
-  "files": [],
-  "references": [
-    {
-      "path": "./src"
-    },
-    {
-      "path": "./test"
-    },
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
+  "extends": "@1stg/tsconfig/node16",
+  "compilerOptions": {
+    "rootDir": ".",
+    // https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping#node-12
+    "target": "ES2019"
+  }
 }
