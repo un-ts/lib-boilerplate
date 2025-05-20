@@ -11,17 +11,31 @@
   "engines": {
     "node": "^12.20.0 || ^14.18.0 || >=16.0.0"
   },
-  "exports": "./src/index.ts",
+  "main": "./lib/index.cjs",
+  "types": "./lib/index.d.cts",
+  "module": "./lib/index.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/index.d.ts",
+        "default": "./lib/index.js"
+      },
+      "require": {
+        "types": "./lib/index.d.cts",
+        "default": "./lib/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
   "files": [
-    "index.d.cts",
     "lib",
     "!**/*.tsbuildinfo"
   ],
   "scripts": {
     "build": "run-p 'build:*'",
-    "build:r": "r -f cjs",
-    "build:tsc": "tsc -b src",
-    "clean": "rimraf -g .type-coverage coverage dist lib '.*cache'",
+    "build:tsc": "tsc -b",
+    "build:tsdown": "tsdown --clean false -d lib --format cjs --tsconfig src/tsconfig.json src/index.ts",
+    "clean": "premove .type-coverage coverage dist lib .eslintcache .stylelintcache",
     "dev": "vitest",
     "docs": "vite",
     "docs:build": "vite build",
@@ -39,68 +53,50 @@
   },
   "devDependencies": {
     "@1stg/browserslist-config": "^2.1.4",
-    "@1stg/common-config": "^13.0.1",
+    "@1stg/common-config": "^14.0.0",
     "@1stg/postcss-config": "^6.0.6",
     "@1stg/stylelint-config": "^6.0.5",
     "@changesets/changelog-github": "^0.5.1",
-    "@changesets/cli": "^2.29.2",
-    "@commitlint/cli": "^19.8.0",
-    "@eslint-react/eslint-plugin": "^1.48.4",
+    "@changesets/cli": "^2.29.4",
+    "@commitlint/cli": "^19.8.1",
+    "@eslint-react/eslint-plugin": "^1.49.0",
     "@mdx-js/rollup": "^3.1.0",
-    "@pkgr/rollup": "^6.0.3",
-    "@shikijs/rehype": "^3.2.2",
+    "@shikijs/rehype": "^3.4.2",
     "@size-limit/preset-small-lib": "^11.2.0",
     "@types/mdx": "^2.0.13",
-    "@types/node": "^22.14.1",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
-    "@types/web": "^0.0.220",
+    "@types/node": "^22.15.19",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "@types/web": "^0.0.235",
     "@vercel/analytics": "^1.5.0",
     "@vitejs/plugin-react-swc": "^3.9.0",
-    "@vitest/coverage-v8": "^3.1.1",
-    "@vitest/eslint-plugin": "^1.1.43",
-    "clean-pkg-json": "^1.2.1",
-    "eslint": "^9.24.0",
+    "@vitest/coverage-v8": "^3.1.4",
+    "@vitest/eslint-plugin": "^1.2.0",
+    "clean-pkg-json": "^1.3.0",
+    "eslint": "^9.27.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "github-markdown-css": "^5.8.1",
     "nano-staged": "^0.8.0",
-    "npm-run-all2": "^7.0.2",
+    "npm-run-all2": "^8.0.2",
+    "premove": "^4.0.0",
     "prettier": "^3.5.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.5.1",
+    "react-router-dom": "^7.6.0",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.1",
-    "rimraf": "^6.0.1",
-    "simple-git-hooks": "^2.12.1",
+    "simple-git-hooks": "^2.13.0",
     "size-limit": "^11.2.0",
-    "stylelint": "^16.18.0",
+    "stylelint": "^16.19.1",
+    "tsdown": "^0.11.12",
     "type-coverage": "^2.29.7",
     "typescript": "^5.8.3",
-    "vite": "^6.3.2",
-    "vitest": "^3.1.1",
+    "vite": "^6.3.5",
+    "vitest": "^3.1.4",
     "yarn-berry-deduplicate": "^6.1.3"
   },
   "resolutions": {
     "prettier": "^3.5.3"
-  },
-  "publishConfig": {
-    "main": "./lib/index.cjs",
-    "types": "./index.d.cts",
-    "module": "./lib/index.js",
-    "exports": {
-      ".": {
-        "import": {
-          "types": "./lib/index.d.ts",
-          "default": "./lib/index.js"
-        },
-        "require": {
-          "types": "./index.d.cts",
-          "default": "./lib/index.cjs"
-        }
-      },
-      "./package.json": "./package.json"
-    }
   },
   "typeCoverage": {
     "atLeast": 100,

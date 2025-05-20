@@ -1,6 +1,15 @@
 {
-  "extends": "@1stg/tsconfig/node16",
-  "compilerOptions": {
-    "rootDir": "."
-  }
+  "extends": "./tsconfig.lib",
+  "files": [],
+  "references": [
+    {
+      "path": "./src"
+    },
+    {
+      "path": "./test"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }
