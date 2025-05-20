@@ -34,7 +34,7 @@
   "scripts": {
     "build": "run-p 'build:*'",
     "build:tsc": "tsc -p src",
-    "build:tsdown": "tsdown --clean false -d lib --format cjs src/index.ts",
+    "build:tsdown": "tsdown --no-clean -d lib --format cjs src/index.ts",
     "clean": "premove .type-coverage coverage dist lib .eslintcache .stylelintcache",
     "dev": "vitest",
     "docs": "vite",
