@@ -103,9 +103,6 @@
     "cache": true,
     "detail": true,
     "ignoreAsAssertion": true,
-    "ignoreFiles": [
-      "**/*.d.ts"
-    ],
     "ignoreNonNullAssertion": true,
     "showRelativePath": true,
     "strict": true,

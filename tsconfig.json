@@ -4,5 +4,6 @@
     "rootDir": ".",
     // https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping#node-12
     "target": "ES2019"
-  }
+  },
+  "exclude": ["lib"]
 }
