@@ -4531,12 +4531,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.0.0, @types/node@npm:^22.15.19":
-  version: 22.15.19
-  resolution: "@types/node@npm:22.15.19"
+"@types/node@npm:*, @types/node@npm:^22.0.0, @types/node@npm:^22.15.21":
+  version: 22.15.21
+  resolution: "@types/node@npm:22.15.21"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/8ef52fa1a91b1c8891616d46f3921a9f3c65ad1c6bb62db7899c8c28643c13bf9d607a2403b1e5aceb3e6fa6749efc9e0ba5c39618a4872da6946437b0edbfbe
+  checksum: 10c0/f092bbccda2131c2b2c8f720338080aa0ef1d928f5f1062c03954a4f7dafa7ee3ed29bc3e51bd4e2584473b3d943c637a2b39ad7174898970818270187cf10c1
   languageName: node
   linkType: hard
 
@@ -4556,12 +4556,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.1.4":
-  version: 19.1.4
-  resolution: "@types/react@npm:19.1.4"
+"@types/react@npm:^19.1.5":
+  version: 19.1.5
+  resolution: "@types/react@npm:19.1.5"
   dependencies:
     csstype: "npm:^3.0.2"
-  checksum: 10c0/501350d4f9cef13c5dd1b1496fa70ebaff52f6fa359b623b51c9d817e5bc4333fa3c8b7a6a4cbc88c643385052d66a243c3ceccfd6926062f917a2dd0535f6b3
+  checksum: 10c0/e0811aadc65cf4030e2418c7975b524f126db806bacb85cffdbe5e50c3606e9a5ffe89ffe6bf9c945e03f5e8d5ed992686bc6bb478db1f3127cc50933f648e1e
   languageName: node
   linkType: hard
 
@@ -8746,12 +8746,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-tsconfig@npm:^4.10.0, get-tsconfig@npm:^4.8.1":
-  version: 4.10.0
-  resolution: "get-tsconfig@npm:4.10.0"
+"get-tsconfig@npm:^4.10.0, get-tsconfig@npm:^4.10.1, get-tsconfig@npm:^4.8.1":
+  version: 4.10.1
+  resolution: "get-tsconfig@npm:4.10.1"
   dependencies:
     resolve-pkg-maps: "npm:^1.0.0"
-  checksum: 10c0/c9b5572c5118923c491c04285c73bd55b19e214992af957c502a3be0fc0043bb421386ffd45ca3433c0a7fba81221ca300479e8393960acf15d0ed4563f38a86
+  checksum: 10c0/7f8e3dabc6a49b747920a800fb88e1952fef871cdf51b79e98db48275a5de6cdaf499c55ee67df5fa6fe7ce65f0063e26de0f2e53049b408c585aa74d39ffa21
   languageName: node
   linkType: hard
 
@@ -10212,8 +10212,8 @@ __metadata:
     "@shikijs/rehype": "npm:^3.4.2"
     "@size-limit/preset-small-lib": "npm:^11.2.0"
     "@types/mdx": "npm:^2.0.13"
-    "@types/node": "npm:^22.15.19"
-    "@types/react": "npm:^19.1.4"
+    "@types/node": "npm:^22.15.21"
+    "@types/react": "npm:^19.1.5"
     "@types/react-dom": "npm:^19.1.5"
     "@types/web": "npm:^0.0.235"
     "@vercel/analytics": "npm:^1.5.0"
@@ -10225,7 +10225,7 @@ __metadata:
     eslint-plugin-react-hooks: "npm:^5.2.0"
     github-markdown-css: "npm:^5.8.1"
     nano-staged: "npm:^0.8.0"
-    npm-run-all2: "npm:^8.0.2"
+    npm-run-all2: "npm:^8.0.3"
     premove: "npm:^4.0.0"
     prettier: "npm:^3.5.3"
     react: "npm:^19.1.0"
@@ -10236,7 +10236,7 @@ __metadata:
     simple-git-hooks: "npm:^2.13.0"
     size-limit: "npm:^11.2.0"
     stylelint: "npm:^16.19.1"
-    tsdown: "npm:^0.11.12"
+    tsdown: "npm:^0.12.1"
     type-coverage: "npm:^2.29.7"
     typescript: "npm:^5.8.3"
     vite: "npm:^6.3.5"
@@ -11485,7 +11485,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:10.0.1, minimatch@npm:6 || 7 || 8 || 9 || 10, minimatch@npm:^10.0.0, minimatch@npm:^9.0.3 || ^10.0.1":
+"minimatch@npm:10.0.1, minimatch@npm:6 || 7 || 8 || 9 || 10, minimatch@npm:^10.0.0, minimatch@npm:^10.0.1, minimatch@npm:^9.0.3 || ^10.0.1":
   version: 10.0.1
   resolution: "minimatch@npm:10.0.1"
   dependencies:
@@ -11903,14 +11903,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-run-all2@npm:^8.0.2":
-  version: 8.0.2
-  resolution: "npm-run-all2@npm:8.0.2"
+"npm-run-all2@npm:^8.0.3":
+  version: 8.0.3
+  resolution: "npm-run-all2@npm:8.0.3"
   dependencies:
     ansi-styles: "npm:^6.2.1"
     cross-spawn: "npm:^7.0.6"
     memorystream: "npm:^0.3.1"
-    picomatch: "npm:^4.0.2"
+    minimatch: "npm:^10.0.1"
     pidtree: "npm:^0.6.0"
     read-package-json-fast: "npm:^4.0.0"
     shell-quote: "npm:^1.7.3"
@@ -11920,7 +11920,7 @@ __metadata:
     npm-run-all2: bin/npm-run-all/index.js
     run-p: bin/run-p/index.js
     run-s: bin/run-s/index.js
-  checksum: 10c0/f123741fc221bd6b51ec173f1e9345191599f087108d60a10e856e033a97903b0444db8a41af7a9548eeb14c48486ab109d091bc3489b72fae03cf0f014755d4
+  checksum: 10c0/22773c2144bf0477f2be464043e180c4b37078df63147a374a47b3bac9b5bc5825e7a7253d7b138a2a5e34d2ff13f0fc7cfff4f7d46170405728c373dd733855
   languageName: node
   linkType: hard
 
@@ -14939,9 +14939,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rolldown-plugin-dts@npm:^0.13.2":
-  version: 0.13.3
-  resolution: "rolldown-plugin-dts@npm:0.13.3"
+"rolldown-plugin-dts@npm:^0.13.4":
+  version: 0.13.4
+  resolution: "rolldown-plugin-dts@npm:0.13.4"
   dependencies:
     "@babel/generator": "npm:^7.27.1"
     "@babel/parser": "npm:^7.27.2"
@@ -14950,7 +14950,7 @@ __metadata:
     birpc: "npm:^2.3.0"
     debug: "npm:^4.4.1"
     dts-resolver: "npm:^2.0.1"
-    get-tsconfig: "npm:^4.10.0"
+    get-tsconfig: "npm:^4.10.1"
   peerDependencies:
     rolldown: ^1.0.0-beta.9
     typescript: ^5.0.0
@@ -14960,7 +14960,7 @@ __metadata:
       optional: true
     vue-tsc:
       optional: true
-  checksum: 10c0/d8e2b60fac180e6cc3b00a67c562b15b1f81df25a8ccac7e61a69de5829d43484d78628dd7906fa260de633b658179ff2b1a65ce4c9139af03fc05dfec21c3fc
+  checksum: 10c0/f15601da4e3cbdde1338e3cf77e447515e87ffdb0e12632cb5d3de35a87930fb22a3d92d489efb9d0bb863c4d02bfb5f8a41df8903f471e1af4ccebc17fb407e
   languageName: node
   linkType: hard
 
@@ -16213,9 +16213,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsdown@npm:^0.11.12":
-  version: 0.11.12
-  resolution: "tsdown@npm:0.11.12"
+"tsdown@npm:^0.12.1":
+  version: 0.12.1
+  resolution: "tsdown@npm:0.12.1"
   dependencies:
     ansis: "npm:^4.0.0"
     cac: "npm:^6.7.14"
@@ -16225,7 +16225,7 @@ __metadata:
     empathic: "npm:^1.1.0"
     hookable: "npm:^5.5.3"
     rolldown: "npm:1.0.0-beta.9"
-    rolldown-plugin-dts: "npm:^0.13.2"
+    rolldown-plugin-dts: "npm:^0.13.4"
     semver: "npm:^7.7.2"
     tinyexec: "npm:^1.0.1"
     tinyglobby: "npm:^0.2.13"
@@ -16246,7 +16246,7 @@ __metadata:
       optional: true
   bin:
     tsdown: dist/run.js
-  checksum: 10c0/43ae351e1d434ecd748b27a69c1d0e900d75aae48fd3cf2cac8184ea6b754179fc6d529b954cfa23083aacb7056204e3572eed31b4819f92bbe89e14bd869511
+  checksum: 10c0/587732f98a982b0f318d65f5149f522b3941c5d0e192c0fcd41afde0cb6e5c3576763a0b59c9ae80d9b91695fe4e09d5cd27e7649ac6168335fdb5cacc05b5c8
   languageName: node
   linkType: hard
 
